@@ -1,0 +1,46 @@
+<%- include('./partials/header.ejs') %>
+<%- include('./partials/navbar.ejs') %>
+
+<div class="container mt-5 mb-5">
+  <h1>Enter A Note Below</h1>
+</div>
+<form method="POST" action="/sent-message">
+  <div class="form-group container">
+    <div class="form-group mt-5 mb-5">
+      <input class="form-control border-0 bg-light p-4" type="text" name="title" placeholder="Write Something Here">
+    </div>
+    <div class="form-group mt-5 mb-5">
+      <textarea class="form-control border-0 bg-light p-4" id="exampleFormControlTextarea1" name="notes" rows="3" placeholder="Continue Here"></textarea>
+    </div>
+    <div class="form-group mt-5 mb-5">
+      <button type="submit" class="btn btn-outline-success">Submit</button>
+    </div>
+  </div>
+</form>
+
+
+<div class="container">
+  <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Message Title</th>
+        <th scope="col">Message</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+          <td></td>
+          <td></td>
+        <td>
+          <button type="submit" class="btn btn-outline-primary mr-4">Update</button>
+          <button type="submit" class="btn btn-outline-danger">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<%- include('./partials/footer.ejs') %>

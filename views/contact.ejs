@@ -1,0 +1,37 @@
+<%- include('./partials/header.ejs') %>
+<%- include('./partials/navbar.ejs') %>
+
+
+<div class="container-fulid	 mt-5">
+  <div class="row align-items-center">
+    <div class="col-sm ml-5 mr-5">
+      <h1>Let’s Talk </h1>
+      <p>Send us a message anytime, We would like to know your thoughts and experience using breakaway. If you don’t understand anything or something is not working correctly, send us a message we will work on it as soon as possible. </p>
+      <img src="/images/utilize-compressor.png" alt="" class="img-thumbnail border-0">
+    </div>
+    <div class="col-sm ml-5 mr-5">
+      <form method="POST" action="/sent-contact-data">
+        <div class="form-group container">
+          <div class="form-group mt-4 mb-4">
+            <label>Full Name</label>
+            <input class="form-control" type="text" name="name">
+          </div>
+          <div class="form-group mt-4 mb-4">
+                <label>Email</label>
+          <input type="email"  name="email"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group mt-4 mb-4">
+            <label>Contact Us</label>
+            <textarea type="text" name="message"class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="form-group mt-4 mb-4">
+            <input type="submit" value="submit"class="btn-success">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<%- include('./partials/footer.ejs') %>
